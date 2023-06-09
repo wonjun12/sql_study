@@ -1,0 +1,37 @@
+RDBMS - 관계형 데이터베이스
+   - 데이터의 양을 어느정도 예측할 수 있다면, 중요한 데이터라면 사용한다.
+NoSQL - SNS 서비스에 의해 생겨남
+   - 데이터의 량을 예측할 수 없는 것에서 주로 사용
+   - 분산처리 하려고
+ - 데이터 저장은 이중 처리 (분산 저장)
+
+AWS MySQL 설치
+ - AWS RDS 접속 - 데이터베이스 생성 - MySQL
+ - 템플릿(프리 티어) - 생성
+
+AWS MySQL 접속하기 위해 설치 해야하는 것
+ - MySQL WorkBench 설치
+
+MySQL workbench
+ - 설정 후 접속
+    - host name : RDS의 엔드포인트를 넣는다.
+    - user name : admin
+    - password : 설정한 비밀번호 입력
+ - 바로 접속이 안된다. > 방화벽을 설정해야함. > 3306 인바인드 규칙 추가
+
+
+
+- 데이터들의 관계
+
+- 데이터 베이스 : 스키마
+  - 프로젝트 단위
+ - 1. 테이블 만들기 (New Schema)
+  - 2. table 만들기
+
+PK : Primary Key
+NN : Not Null
+UN : Unsigned 음수가 없음
+AI : Auto Increment 자동 증가
+
+- 테이블 만들때 options에서 Auto Increment에서 다음에 사용할 번호를 기억하고 있다.
+  - 데이터의 값을 전부 삭제하고 다시 시작할려면 1로 변경하자.

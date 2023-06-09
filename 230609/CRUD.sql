@@ -1,0 +1,5 @@
+-- CRUD
+-- carete : insert
+-- read : select
+-- update : update
+-- delete : delete
