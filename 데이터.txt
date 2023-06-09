@@ -33,5 +33,7 @@ NN : Not Null
 UN : Unsigned 음수가 없음
 AI : Auto Increment 자동 증가
 
+Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.  To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+
 - 테이블 만들때 options에서 Auto Increment에서 다음에 사용할 번호를 기억하고 있다.
   - 데이터의 값을 전부 삭제하고 다시 시작할려면 1로 변경하자.
