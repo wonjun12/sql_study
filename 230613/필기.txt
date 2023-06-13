@@ -1,0 +1,39 @@
+Comments
+id
+content 200글자
+createdAt : timestamp / default now()
+updatedAt : timestamp / default now() on update now()
+
+date, time, datetime, timestamp
+
+
+
+관계 공부 테이블생성
+ - 참조 하고 있다. (레퍼런스)
+customers
+ - id
+ - first_name : varcher 100
+ - last_name : varcher 100
+ - email : varcher 50
+ - created_at : timestamp / default now()
+
+orders
+ - id
+ - order_date : date
+ - amount : decimal(8 , 2)
+      -> 전체 숫자 8자리, 소수점 2자리
+ - customer_id : int
+    -> 외래키 (foregin key)
+    - 없는 데이터를 넣을 경우 알려주는 역할도 함
+ - created_at
+
+
+ -> 테이블 생성의 'Foreign Keys' 탭
+   - Key Name: 표시항 이름
+   - Referenced Table : 참조할 테이블
+   - 우측 컬럼 : 외래키 지정 컬럼
+   - 서로의 데이터 타입이 같아야 지정이 가능하다.
+
+
+ - year의 4자리 정수 처리는
+   - year(4)라고 사용해도된다.
