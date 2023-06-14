@@ -1,0 +1,39 @@
+- 일정 공유 앱 개발 데이터베이스 기획 실습
+
+=====================
+- 기본 화면 정보
+
+ - 회원가입 화면
+   - 이메일
+   - 비밀번호
+   - 이름
+
+ - 일정 화면
+   - 일정 내용
+   - 일정 날짜
+   - 완료 여부
+
+ - 친구
+   - 친구 여부
+
+=======================
+- 만들어야 하는 테이블
+ = 스키마 이름 : day_work
+  - users
+    - id (PK)
+    - email (UQ)
+    - pwd
+    - name
+    - created_at
+
+  - works
+    - id (PK)
+    - user_id (FK -users)
+    - content
+    - end_date
+    - is_complete
+ 
+  - firends
+    - my_id (PK, FK)
+    - firend_id (PK, FK)
+    - created_at

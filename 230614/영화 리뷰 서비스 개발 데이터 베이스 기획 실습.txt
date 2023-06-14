@@ -1,0 +1,51 @@
+- 기본 화면 정보
+   - 회원 가입 화면
+      - 이메일
+      - 비밀번호
+      - 유저 이름
+      - 성별
+
+   - 영화 상세 정보
+      - 제목
+      - 줄거리
+      - 개봉일
+      - 관객수
+
+   - 타이타닉 리뷰
+      - 내용
+      - 유저 이름
+      - 별점
+
+=====================   
+- 만들어야 하느느 테이블 
+ = 스키마 이름 movie_reviews
+
+ - users
+   - id (pk)
+   - email  (UQ)
+   - password 
+   - name
+   - gender (boolean)
+   - created_at
+  
+ - movie
+   - id (pk)
+   - title
+   - summary
+   - genre
+   - year
+   - attendance
+   - created_at
+
+  - review
+   - id (pk)
+   - movie_id (UQ)
+   - user_id (UQ)
+   - content
+   - rating
+   - created_at
+
+ - hart_save
+   - user_id
+   - movie_id
+   - created_at
